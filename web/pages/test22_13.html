@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>将div元素并列显示示例</title>
+</head>
+<style>
+    div#a,div#b{
+        display: inline-block;
+        width: 200px;
+        overflow-wrap: break-word;
+        vertical-align: top;
+    }
+    div#a{
+        background-color: #0088ff;
+    }
+    div#b{
+        background-color: #00ccff;
+    }
+    div#c{
+        width: 400px;
+        background-color: #ffff00;
+        overflow-wrap: break-word;
+    }
+
+</style>
+<body>
+<div id="a">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+<div id="b">BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB</div>
+<div id="c">CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC</div>
+</body>
+</html>

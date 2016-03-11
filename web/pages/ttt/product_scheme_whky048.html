@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>千元兼职，招人了</title>
+    <base href="../../" />
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,target-densitydpi=medium-dpi" >
+    <link type="text/css" rel="stylesheet" href="http://static.ttsales.cn/ttsales-cms/resources/sas/css/common.v4.css?v=v2.0.1_20150423" />
+    <link type="text/css" rel="stylesheet" href="http://static.ttsales.cn/ttsales-cms/resources/humane/humane/custom.css" />
+    <link rel="stylesheet" href="http://static.ttsales.cn/ttsales-cms/pages/htmls/css/mobilebone.css">
+    <link rel="stylesheet" href="http://static.ttsales.cn/ttsales-cms/pages/htmls/css/animate.css">
+    <link type="text/css" rel="stylesheet" href="http://static.ttsales.cn/ttsales-cms/pages/sys/css/join.css?v=v2.0.1_20150608" />
+
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/jquery/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/jquery/jquery.base64.js"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/sas/jquery.sas.js?v=v2.0.1_20150423"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/humane/humane.min.js"></script>
+
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/pages/htmls/js/schemeCommonNew.min.js?v=v2.0.1_20150423"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/weixinJS/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/resources/weixinJS/weixin-wrapper.js?v=v2.0.1_20150423"></script>
+    <!--  -->
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/pages/htmls/js/mobilebone.js"></script>
+    <script type="text/javascript" src="http://static.ttsales.cn/ttsales-cms/pages/htmls/js/mobilebone-touch.js"></script>
+
+    <style type="text/css">
+        .page img{
+            max-width: 100%;
+        }
+        #IntroducerInfo{
+            z-index: 9999;
+            width: 270px;
+            height: 372px;
+            position: absolute;
+            left: 50%;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            background-color: #FFF;
+            top: 24.5%;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .info-button{
+            height: 43px;
+            width: 182px;
+            position: absolute;
+            margin-top: 84px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            background-color: #258dd6;
+            color: #FFF;
+            text-align: center;
+            line-height: 43px;
+            border-radius: 10px;
+        }
+
+        .info-button :active {
+            background-color: #ffffff !important;
+            color:#000000 !important;
+        }
+
+        #img1-1{
+            position: absolute; top: 50%; transform: translateY(-50%);-webkit-transform: translateY(-50%);
+        }
+
+        #img2-1{
+            z-index: 5555; position: absolute; top: 50%; transform: translateY(-50%);-webkit-transform: translateY(-50%);
+        }
+        #img2-2{
+            z-index: 9999; position: absolute; top: 50%; transform: translateY(-50%);-webkit-transform: translateY(-50%);
+        }
+
+        #img5-1{
+            z-index: 5555; height: 100%; position: absolute;left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%);-webkit-transform: translateY(-50%) translateX(-50%);
+        }
+        #img5-2{
+            z-index: 9999; height: 90%; position: absolute;left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%);-webkit-transform: translateY(-50%) translateX(-50%);
+        }
+
+        #tt-l6{
+            width: 46px; position: absolute; top: -95px;left: -1px;
+        }
+        #tt-w6{
+            height: 62px; width: 80%; position: absolute; top: -76px;left: 50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);
+        }
+
+        @media only screen and (max-width: 320px) and (max-height: 480px){
+            #tt-l6{
+                width: 36px; position: absolute; top: -64px;left: -1px;
+            }
+            #tt-w6{
+                width: 72%; position: absolute; top: -56px;left: 50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);
+            }
+            #IntroducerInfo{
+                top: 17.5%;
+                height: 322px;
+                width: 250px;
+            }
+            .info-button{
+                margin-top: 24px;
+                line-height: 37px;
+                height: 37px;
+            }
+
+            .info-button :active {
+                background-color: #ffffff !important;
+                color:#000000 !important;
+            }
+
+            #img1-1{
+                top: 50%;
+                height: 92%;
+                position: absolute; left: 50%; transform:translateY(-50%) translateX(-50%) ;-webkit-transform:translateY(-50%) translateX(-50%);
+            }
+
+            #img2-1{
+                height: 100%;
+                z-index: 5555; position: absolute;left: 50%; transform:translateY(-50%) translateX(-50%); -webkit-transform:translateY(-50%) translateX(-50%);
+            }
+            #img2-2{
+                height: 90%;
+                z-index: 9999; position: absolute; left: 50%; transform:translateY(-50%) translateX(-50%); -webkit-transform:translateY(-50%) translateX(-50%);
+            }
+            #img5-1{
+                height: 100%;
+                z-index: 5555; position: absolute;left: 50%; transform:translateY(-50%) translateX(-50%); -webkit-transform:translateY(-50%) translateX(-50%);
+            }
+            #img5-2{
+                height: 90%;
+                z-index: 9999; position: absolute; left: 50%; transform:translateY(-50%) translateX(-50%); -webkit-transform:translateY(-50%) translateX(-50%);
+            }
+
+        }
+    </style>
+    <script>
+
+        var introducer = (function(){
+
+            var defaults = {
+                global : schemeCommon.getGlobal()
+            };
+
+            function saveInfo(){
+                var name;
+                var mobile;
+                var word;
+                var word_code;
+
+                name = $("#name").val();
+                if($.sas.util.isNull(name)){
+                    humane.info('请输入姓名');
+                    return;
+                }
+                mobile = $("#mobile").val();
+                if($.sas.util.isNull(mobile)){
+                    humane.info('请输入手机号码');
+                    return;
+                }
+                if(mobile.length != 11){
+                    humane.info('请输入正确手机号码');
+                    return;
+                }
+                if(!(/^1[3|4|5|7|8][0-9]\d{4,8}$/.test(mobile))){
+                    humane.info('请输入正确手机号码');
+                    return;
+                }
+
+                word=[];
+                word.push($("#city").val());
+                if($.sas.util.isNull($("#city").val())){
+                    humane.info('请输入城市');
+                    return;
+                }
+                word.push($("#resource").val());
+                if($.sas.util.isNull($("#resource").val())){
+                    humane.info('请输入来源');
+                    return;
+                }
+
+                var commonProCustomInfo={};
+                commonProCustomInfo.name=name;
+                commonProCustomInfo.mobile=mobile;
+                commonProCustomInfo.word=word;
+                commonProCustomInfo.word_code=word_code;
+                commonProCustomInfo.transmitId=defaults.global.pTransmitId;
+                commonProCustomInfo.popularizeId=defaults.global.popularizeId;
+                commonProCustomInfo.schemeId=defaults.global.schemeId;
+                commonProCustomInfo.openId=$.sas.util.getCookie("openId");
+
+                $.ajax({
+                    type : "POST",
+                    url : "http://uu.ttsales.cn/ttsales-cms/common/customerIfo/drive.do",
+                    contentType:'application/json',
+                    data :JSON.stringify(commonProCustomInfo),
+                    dataType : 'json',
+                    success : function(data) {
+                        if(data=="1"){
+                            humane.info("已成功提交！");
+                            $("#name").val('');
+                            $("#mobile").val('');
+                            $("#city").val('');
+                            //  $("#resource").val('');
+
+                        }else if(data=="0"){
+                            humane.info("您的手机号已存在！");
+                        }
+                    },
+                    dataType : "text"
+                });
+
+            };
+
+            return {
+                saveInfo:saveInfo
+            };
+
+        })();
+
+
+        $(function() {
+            schemeCommon.onPageReady(function() {
+                webScroll.init({control:false});
+            }, true, true, false);
+            /*webScroll.init({control:false});*/
+        });
+
+    </script>
+</head>
+
+<body>
+<input type="hidden" id="scheme_id"	name="scheme_id" value="wcpt010">
+<input type="hidden" id="scheme_thumbnailurl" name="scheme_thumbnailurl" value="/static/web/web/2015/9/17/5e25fcc49d1141c9b319645c6550d43b.jpg">
+<input type="hidden" id="scheme_summary" name="scheme_summary" value="你有才，我有财，来，我们谈谈！">
+<input type="hidden" id="scheme_title" name="scheme_title" value="千元兼职，招人了">
+
+<div id="page1" class="page out" data-form="slideup">
+
+    <div class="container" style="background-color: #64afce;height: 100%;width: 100%">
+        <img id="img1-1" style=" " alt="container" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/1.png"/>
+    </div>
+</div>
+
+<div id="page2" class="page out" data-form="slideup">
+    <div class="container" style="background-color: #e4a538;height: 100%;width: 100%">
+        <img id="img2-1" alt="container" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/2-1.png"/>
+        <img id="img2-2" alt="container" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/2.png"/>
+    </div>
+</div>
+<div id="page3" class="page out" data-form="slideup">
+    <div class="container" style="background-color: #55a7e0;height: 100%;width: 100%">
+        <img style="height: 76%; position: absolute;left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%);-webkit-transform: translateY(-50%) translateX(-50%);" alt="container" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/3.png"/>
+    </div>
+</div>
+<div id="page4" class="page out" data-form="slideup">
+    <div class="container" style="background-color: #eb5a56;width: 100%;height: 100%;">
+        <img style="height: 80%; position: absolute;left: 50%; top: 50%; transform: translateY(-50%) translateX(-50%);-webkit-transform: translateY(-50%) translateX(-50%);" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/4.png"/>
+    </div>
+</div>
+<div id="page5" class="page out" data-form="slideup">
+    <div class="container" style="background-color: #42be8d;width: 100%;height: 100%;">
+        <img id="img5-1"  alt="container" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/5-1.png"/>
+        <img id="img5-2"   alt="container" src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/5.png"/>
+    </div>
+</div>
+<div id="page6" class="page out" data-form="slideup">
+    <div class="container" style="background-color:#5fa8a1;width: 100%;height: 100%; ">
+        <div id="IntroducerInfo">
+            <div class="tt-img">
+                <div id="tt-l6">
+                    <img src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/l-6.png">
+                </div>
+                <div id="tt-w6">
+                    <img src="http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/w-6.png">
+                </div>
+            </div>
+            <div style="text-align: center;font-size: 16px;background-color: #efefef;height: 42px;line-height: 42px;">
+                资料填写
+            </div>
+            <div class="div-hr"></div>
+            <div class="list-item my-join-item">
+                <span class="customer-img" style="background-image: url('http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/name.png');"></span>
+                <div class="layout-right my-input-div">
+                    <input type="text" name="name" id="name" value=""  class="input my-input font-lable-color font-size-l" placeholder="请输入姓名 "/>
+                </div>
+            </div>
+            <div class="div-hr"></div>
+            <div class="list-item my-join-item">
+                <span class="customer-img" style="background-image: url('http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/mobile.png');"></span>
+                <div class="layout-right my-input-div">
+                    <input type="tel" name="name" id="mobile" value=""  class="input my-input font-lable-color font-size-l" placeholder="请输入电话号码 "/>
+                </div>
+            </div>
+            <div class="div-hr"></div>
+            <div class="list-item my-join-item">
+                <span class="customer-img" style="background-image: url('http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/city.png');"></span>
+                <div class="layout-right my-input-div">
+                    <input type="text" name="name" id="city" value=""  class="input my-input font-lable-color font-size-l" placeholder="请填写所在城市 "/>
+                </div>
+            </div>
+            <div class="div-hr"></div>
+            <div class="list-item my-join-item">
+                <span class="customer-img" style="background-image: url('http://static.ttsales.cn/ttsales-cms/static/web/web/2015/9/17/introducer/resource.png');"></span>
+                <div class="layout-right my-input-div">
+                    <select id="resource" class="input my-input my-input-rtl font-size-l">
+                        <option  disabled = 'disabled' selected = 'selected'>通过什么方式知道的</option>
+                        <option value="00">朋友圈</option>
+                        <option value="01">门店介绍</option>
+                        <option value="02">车展现场</option>
+                    </select>
+                </div>
+            </div>
+            <div class="div-hr"></div>
+
+            <div class="info-button font-size-l" onclick="introducer.saveInfo();">提交</div>
+            <div class="font-size-t" style="position: absolute;bottom: 10px;width: 100%;color: #bcbcbc;text-align: center;">客服妹子会在３个工作日内联系您！</div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
